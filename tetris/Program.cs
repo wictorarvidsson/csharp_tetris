@@ -15,8 +15,8 @@ namespace tetris
             
             Render render = new Render();
             render.setWindowSize();
-
             render.drawMap();
+            render.intro();
 
             while (true)
             {

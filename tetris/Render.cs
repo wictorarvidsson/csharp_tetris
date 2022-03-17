@@ -28,6 +28,25 @@ namespace tetris
 
         }
 
+        public void intro()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            for(int i = 0; i < 3; i++)
+            {
+                Console.SetCursorPosition(12, 19);
+                Console.Write("Controls: WASD.  ");
+                Thread.Sleep(500);
+                Console.SetCursorPosition(12, 19);
+                Console.Write("Controls: WASD . ");
+                Thread.Sleep(500);
+                Console.SetCursorPosition(12, 19);
+                Console.Write("Controls: WASD  .");
+                Thread.Sleep(500);
+            }
+            Console.SetCursorPosition(12, 19);
+            Console.Write("                 ");
+        }
+
         public void addGravityOnObjects()
         {
             int oldX = objects.xPos;
